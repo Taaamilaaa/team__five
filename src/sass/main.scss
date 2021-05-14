@@ -1,6 +1,16 @@
 @import './utils/variables';
 @import './utils/base';
 @import './utils/mixin';
+@import './components/logo.';
 @import './components/button';
+@import './components/modal';
 @import './components/social';
 @import './example';
+@import './layouts/about';
+@import './layouts/contact';
+@import './layouts/header';
+@import './layouts/menu';
+@import './layouts/program';
+@import './layouts/registranion';
+@import './layouts/reviews';
+@import './layouts/section';
