@@ -1,0 +1,12 @@
+.social__list {
+  display: inline-flex;
+}
+.social__link {
+  @include flexPositon(inline-flex, center, center);
+  width: 40px;
+  height: 40px;
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $hover-color;
+  }
+}
