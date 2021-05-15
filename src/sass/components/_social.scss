@@ -3,10 +3,35 @@
 }
 .social__link {
   @include flexPositon(inline-flex, center, center);
-  width: 40px;
-  height: 40px;
+  width: 27px;
+  height: 27px;
+  outline: none;
+  &:hover,
+  &:focus {
+    border: 1px $outline-color solid;
+    border-radius: 25px;
+  }
   &:hover .social__icon,
   &:focus .social__icon {
     fill: $hover-color;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .icon-twitter {
+    width: 24px;
+    height: 19px;
+  }
+  .icon-instagram {
+    width: 19px;
+    height: 19px;
+  }
+  .icon-facebook {
+    width: 10.27px;
+    height: 19px;
   }
 }
