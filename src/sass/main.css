@@ -167,4 +167,17 @@ img {
   background-size: cover;
   background-position: center;
 }
+
+.regisration__title {
+  width: 106px;
+  height: 65px;
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 65px;
+  /* identical to box height, or 271% */
+  text-align: center;
+  color: #2e2520;
+}
 /*# sourceMappingURL=main.css.map */
