@@ -113,6 +113,10 @@ img {
   cursor: pointer;
 }
 
+.button:hover, .button:focus {
+  background-color: #876655;
+}
+
 .social__list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -133,7 +137,8 @@ img {
   height: 40px;
 }
 
-.social__link:hover .social__icon {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
   fill: #876655;
 }
 
