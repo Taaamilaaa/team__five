@@ -1,9 +1,9 @@
 .button {
   @include flexPositon(flex, center, center);
-  padding: 12px 0px;
+  padding: 13px 0px;
   margin: 0;
-  width: 158px;
-  height: 45px;
+  width: 145px;
+  height: 40px;
   background-color: $accent-color;
   border: none;
   border-radius: 25px;
@@ -11,7 +11,19 @@
   font-family: $title-font;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 2.7;
   cursor: pointer;
+  outline: none;
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+    border: 2px $outline-color solid;
+    border-radius: 25px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    width: 158px;
+    height: 45px;
+  }
 }

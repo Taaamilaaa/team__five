@@ -9,19 +9,41 @@
       href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css" />
   </head>
 
   <body>
+<<<<<<< HEAD
    <include src="./partials/header.html"></include>
+=======
+    <!-- <header class="header">
+      <div class="container">
+        <p class="logo">logo</p>
+        <ul class="site-nav">
+          <li class="site-nav__item"><a name="About">About us</a></li>
+          <li class="site-nav__item"><a name="Program">Program</a></li>
+          <li class="site-nav__item"><a name="Reviews">Reviews</a></li>
+          <li class="site-nav__item"><a name="Contact">Contact</a></li>
+        </ul>
+      </div> 
+    </header> -->
+
+
+>>>>>>> ea7c4e112f7329c09e1f65f8709434de11985c39
 
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    
-    <include src="./partials/example.html"></include>
 
+
+   <include src="./partials/registration.html"></include>
+
+
+     <!--Футер-->
+    <include src="./partials/footer.html"></include>
+
+    
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

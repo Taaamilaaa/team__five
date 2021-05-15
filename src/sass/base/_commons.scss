@@ -1,8 +1,12 @@
 *,
 *::before,
 *::after {
+<<<<<<< HEAD:src/sass/utils/_base.scss
   box-sizing: border-box;
   outline: 1px solid yellowgreen;
+=======
+  box-sizing: inherit;
+>>>>>>> ea7c4e112f7329c09e1f65f8709434de11985c39:src/sass/base/_commons.scss
 }
 
 body {
