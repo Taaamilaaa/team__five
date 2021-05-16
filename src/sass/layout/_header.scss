@@ -34,3 +34,37 @@ padding-bottom: 85px;
 .flex{
     display: flex;
 }
+
+.header-logo{
+@media screen and (min-width: 1200px){
+    width: 158px;
+    height: 71px;
+}
+@media screen and (max-width: 767px){
+    width: 190px;
+    height: 85px;
+} 
+@media screen and (min-width: 768px){
+    width: 96px;
+    height: 43px;
+}  
+}
+
+.canvas{
+    @media screen and (max-width: 767px){
+        background-image: url("/src/images/header/background-top_mobile.png");
+    }
+@media screen and (min-width: 768px) {
+     background-image: url("/src/images/header/background-top_tablet.png");
+    }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+      background-image: url("/src/images/header/background-top@2x_tablet.png");
+    }
+  @media screen and (min-width: 1200px) {
+    background-image: url("/src/images/header/background-top_desktop.png");
+    }
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+  
