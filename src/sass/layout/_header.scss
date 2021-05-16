@@ -1,36 +1,35 @@
-.site-nav{
-    @include flexPositon(inline-flex, center, center);  
-font-family: $main-font;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 1.22;
-color: $main-color; 
-@media screen and (max-width: 1200px){
+.site-nav {
+  @include flexPositon(inline-flex, center, center);
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  color: $main-color;
+  @media screen and (max-width: 1200px) {
     .visually-hidden {
-        position: absolute !important;
-        clip: rect(1px 1px 1px 1px);
-        clip: rect(1px, 1px, 1px, 1px);
-        padding: 0 !important;
-        border: 0 !important;
-        height: 1px !important;
-        width: 1px !important;
-        overflow: hidden;
-      };
+      position: absolute !important;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0 !important;
+      border: 0 !important;
+      height: 1px !important;
+      width: 1px !important;
+      overflow: hidden;
+    }
+  }
+}
+.site-nav__item {
+  margin-left: 20px;
+}
+.site-nav__item:first-child {
+  margin-left: 0px;
 }
 
+.site-nav__link {
+  padding-top: 52px;
+  padding-bottom: 85px;
 }
-.site-nav__item{
-    margin-left: 20px;
-}
-.site-nav__item:first-child{
-    margin-left: 0px;
-}
-
-.site-nav__link{
-padding-top: 52px;
-padding-bottom: 85px;
-}    
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
