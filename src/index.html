@@ -9,28 +9,30 @@
       href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap"
       rel="stylesheet"
     />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
+    />
   </head>
 
   <body>
-
     <!--Menu-->
     <include src="./partials/menu.html"></include>
 
-   
+
+    <div class="hero__bg">
+      <include src="./partials/header.html"></include>
+      <include src="./partials/hero.html"></include>
+    </div>
 
 
-   <include src="./partials/header.html"></include>   
+    <include src="./partials/about-us.html"></include>
+    <include src="./partials/program.html"></include>
+    <include src="./partials/registration.html"></include>
 
-   <include src="./partials/program.html"></include>
-   <include src="./partials/registration.html"></include>
-
-
-
-     <!--Футер-->
+    <!--Футер-->
     <include src="./partials/footer.html"></include>
 
-    
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
     <script src="./js/menu.js"></script>
