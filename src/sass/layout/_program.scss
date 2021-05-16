@@ -1,0 +1,36 @@
+.program__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2.7;
+  text-align: center;
+
+  color: $main-color;
+}
+.program__list {
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 21px;
+  }
+  & :nth-last-child(-n + 6) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    & :nth-last-child(-n + 6) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:last-child {
+      margin-bottom: 21px;
+    }
+  }
+}
+.program__text:not(:last-child) {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 21px;
+  }
+}

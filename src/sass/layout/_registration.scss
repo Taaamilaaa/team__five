@@ -1,0 +1,330 @@
+
+// контейнер секциии регистрация
+
+.regisration__container {
+  width: 100%;
+  height: 510px;
+  position: relative;
+  padding: 0;
+  margin-bottom: 27px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    text-align: center;
+    padding-top: 75px;
+    height: 335px;
+    width: 634px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 822px;
+    margin-bottom: 77px;
+  }
+}
+
+// заголовок секции
+
+.regisration__tittle {
+  left: 50%;
+  top: 15px;
+  transform: translate(-50%, 0);
+
+// // ---------заголовок секции------
+
+
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  display: block;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-bottom: 11px;
+  width: 106px;
+  height: 65px;
+  @media screen and (min-width: 768px) {
+    top: 0;
+  }
+}
+
+// контейнер для контента и формы
+
+.container__content {
+  display: block;
+  height: 510px;
+  width: 290px;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+
+  padding-bottom: 47px;
+  background-color: $registration-form-background;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 634px;
+    height: 260px;
+    border-radius: 150px 150px 150px 150px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 822px;
+  }
+}
+
+
+// КОНТЕЙНЕР ДЛЯ ВРЕМЕНИ И ЦЕНЫ
+
+.container__content-time {
+  padding-top: 91px;
+  padding-bottom: 20px;
+  height: 202px;
+  width: 265px;
+  border-bottom: 1px solid $input-text-color;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 11px;
+  @media screen and (min-width: 768px) {
+    width: 179px;
+    height: 190px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-right: 1px solid $input-text-color;
+    padding-top: 16px;
+    padding-bottom: 74px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 30px;
+    margin-right: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 264px;
+    height: 190px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-right: 1px solid $input-text-color;
+    padding-top: 16px;
+    padding-bottom: 69px;
+    padding-right: 30px;
+    margin-right: 30px;
+  }
+}
+
+//ВРЕМЯ РЕГИСТРАЦИИ
+
+
+.registration__time {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 114px;
+  height: 44px;
+  margin-bottom: 25px;
+
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: $desktop-main-line-height;
+  color: $main-color;
+
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 34px;
+    margin-left: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 0;
+    margin-left: 107px;
+    width: 127px;
+    height: 48px;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+
+// Цена
+
+
+.registration__price {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 22px;
+
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: $desktop-main-line-height;
+  color: $main-color;
+
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 99px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 179px;
+    width: 55px;
+    height: 24px;
+  }
+}
+
+
+//ФОРМА РЕГИСТРАЦИИ
+
+.form-registration {
+  width: 265px;
+  height: 173px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  input {
+    font-family: Montserrat;
+    color: $input-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $input-text-color;
+  }
+  input:-ms-input-placeholder {
+    color: $input-text-color;
+  }
+  input::-ms-input-placeholder {
+    color: $input-text-color;
+  }
+  input::placeholder {
+    color: $input-text-color;
+  }
+  @media screen and (min-width: 768px) {
+    width: 234px;
+    height: 100%;
+    padding: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 0;
+  }
+}
+
+// ФОРМА ЗАГОЛОВОК
+
+.form-registration__title {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 265px;
+  height: 40px;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $main-color;
+  text-align: center;
+  margin-bottom: 17px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    width: 234px;
+    padding-right: 20px;
+    text-align: start;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-right: 15px;
+    margin-bottom: 13px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+}
+
+//СТИЛИ НА LABEL
+
+.general-label-registration {
+  height: 23px;
+  border: none;
+}
+
+//СТИЛИ НА INPUT
+
+.general-input-registration {
+  width: 265px;
+  border: none;
+  margin-bottom: 2px;
+  border-bottom: 1px solid $pagination-color;
+  @media screen and (min-width: 768px) {
+    width: 234px;
+  }
+}
+.form-registration__label-name {
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+}
+.form-registration__label-tel {
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+}
+
+// ФОРМА BUTTON
+
+.container__content-button {
+  height: 124px;
+  width: 100%;
+  padding-top: 37px;
+  padding-bottom: 47px;
+  @media screen and (min-width: 768px) {
+    width: 186px;
+    height: 100%;
+    padding: 0;
+    padding-left: 25px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-right: 21px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 294px;
+    height: 100%;
+    padding: 0;
+    padding-left: 38px;
+    padding-top: 110px;
+    padding-bottom: 105px;
+    padding-right: 98px;
+  }
+}
+.form-registration__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $pagination-color;
+  border-radius: 25px;
+  width: 145px;
+  height: 40px;
+
+  font-family: Caveat Brush;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+
+  text-align: center;
+  color: $complementory_color;
+  border: none;
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    font-size: 24px;
+  }
+
+}
