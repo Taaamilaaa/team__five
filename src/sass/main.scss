@@ -3,12 +3,11 @@
 @import './base/commons';
 @import './components/button';
 @import './components/social';
-
+@import './components/read-more-button.scss';
 @import './layout/menu';
 
 @import './layout/header';
+@import './layout/program';
 
 @import './layout/registration';
 @import './layout/footer';
-@import './layout/program';
-@import './components/read-more-button.scss';
