@@ -1,4 +1,4 @@
-<section class="container">
+<section class="program-block container">
 <div class="program-text-block">
         <h2 class="title program__title">Program</h2>
         <p class="program__text">Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New York donut shop!</p>
@@ -25,47 +25,62 @@
                 <p>All products are included in the pric</p>
             </li>
         </ul>
-        <p class="program__text"> <span id="more"> <span id="dots"></span>Come with your dear people and friends
-            and you will spend an unforgettable time and
-            will become a real professional in donuts cooking!</span></span></p>
-            <button class="program__button" onclick="myFunction()" id="myBtn"><span class="program__button-text">Read more</span></button>
+        <div class="program__buttons--disposition">
+            <p class="program__text"> <span class="is-hidden" id="more"> <span id="dots"></span>Come with your dear people and
+                    friends
+                    and you will spend an unforgettable time and
+                    will become a real professional in donuts cooking!</span></span></p>
+            <button class="program__button" onclick="myFunction()" id="myBtn"><span class="program__button-text">Read
+                    more</span></button>
+        </div>
 </div>
-    <ul class="list">
-        <li>
-            <h3>Type of the event</h3>
-            <p>Cooking classes</p>
-            <picture
-            <source srcset= "./images/program/donut-event_mobile.png 1x, ./images/program/donut-event@2x_mobile.png 2x">
+    <ul class="list program-cards__list">
+        <li class="program-cards__item">
+            <h3 class="program-cards__title">Type of the event</h3>
+            <p class="program-cards__text">Cooking classes</p>
+            <picture class="program-cards__image">
+            <source srcset="./images/program/donut-event_mobile.png 1x, ./images/program/donut-event@2x_mobile.png 2x" @media="(min-width:1280px)">
+            <source srcset="./images/program/donut-event_tablet.png 1x, ./images/program/donut-event@2x_tablet.png 2x" @media="(min-width:768px)">
+            <source srcset="./images/program/donut-event_desktop.png 1x, ./images/program/donut-event@2x_desktop.png 2x" @media="(max-width:767.98px)">
             <img src="./images/program/donut-event_desktop.png" alt="пончик коричнево-белый">
             </picture>
             <svg width =20 height =18>
                 <use href ="./images/sprite.svg#icon-chef-hat"></use>
             </svg>
         </li>
-        <li>
-            <h3>Number of guests</h3>
-            <p>1 to 20</p>
-            <picture>
+        <li class="program-cards__item">
+            <h3 class="program-cards__title">Number of guests</h3>
+            <p class="program-cards__text">1 to 20</p>
+            <picture class="program-cards__image">
+                <source srcset="./images/program/donut-guests_mobile.png 1x, ./images/program/donut-guests@2x_mobile.png 2x" @media="(min-width:1280px)">
+                <source srcset="./images/program/donut-guests_tablet.png 1x, ./images/program/donut-guests@2x_tablet.png 2x" @media="(min-width:768px)">
+                <source srcset="./images/program/donut-guests_desktop.png 1x, ./images/program/donut-guests@2x_desktop.png 2x" @media="(max-width:767.98px)">
             <img src="./images/program/donut-guests_desktop.png" alt="пончик c разноцветной посыпкой">
             </picture>
             <svg width =20 height =18>
                 <use href ="./images/sprite.svg#icon-people"></use>
             </svg>
         </li>
-        <li>
-            <h3>Time of the event</h3>
-            <p>18:30 (2.5 hours)</p>
-            <picture>
+        <li class="program-cards__item">
+            <h3 class="program-cards__title">Time of the event</h3>
+            <p class="program-cards__text">18:30 (2.5 hours)</p>
+            <picture class="program-cards__image">
+                <source srcset="./images/program/donut-time-event_mobile.png 1x, ./images/program/donut-time-event@2x_mobile.png 2x" @media="(min-width:1280px)">
+                <source srcset="./images/program/donut-time-event_tablet.png 1x, ./images/program/donut-time-event@2x_tablet.png 2x" @media="(min-width:768px)">
+                <source srcset="./images/program/donut-time-event_desktop.png 1x, ./images/program/donut-time-event@2x_desktop.png 2x" @media="(max-width:767.98px)">
             <img src="./images/program/donut-time-event_desktop.png" alt="пончик с коричневой посыпкой">
             </picture>
             <svg width =20 height =20>
                 <use href ="./images/sprite.svg#icon-clock"></use>
             </svg>
         </li>
-        <li>
-            <h3>The host speaks</h3>
-            <p>English, French</p>
-            <picture>
+        <li class="program-cards__item">
+            <h3 class="program-cards__title">The host speaks</h3>
+            <p class="program-cards__text">English, French</p>
+            <picture class="program-cards__image">
+                <source srcset="./images/program/donut-host_mobile.png 1x, ./images/program/donut-host@2x_mobile.png 2x" @media="(min-width:1280px)">
+                <source srcset="./images/program/donut-host_tablet.png 1x, ./images/program/donut-host@2x_tablet.png 2x" @media="(min-width:768px)">
+                <source srcset="./images/program/donut-host_desktop.png 1x, ./images/program/donut-host@2x_desktop.png 2x" @media="(max-width:767.98px)">
             <img src="./images/program/donut-host_desktop.png" alt="пончик коричневый">
             </picture>
             <svg width =25 height =17>
