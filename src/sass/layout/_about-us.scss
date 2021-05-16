@@ -1,15 +1,50 @@
 .about__title {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 .about__item:not(:last-child) {
   margin-bottom: 15px;
 }
 .about__img {
   display: block;
-  width: 290px;
-  height: 310px;
-  background-image: url(../images/about-us/cupcake-box_mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media screen and (min-width: 320px) {
+    width: 290px;
+    height: 310px;
+    background-image: url(../images/about-us/cupcake-box_mobile.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about-us/cupcake-box@2x_mobile.png);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 320px;
+    height: 352px;
+    background-image: url(../images/about-us/cupcake-box_tablet.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about-us/cupcake-box@2x_tablet.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 512px;
+    height: 547px;
+    background-image: url(../images/about-us/cupcake-box_desktop.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about-us/cupcake-box@2x_desktop.png);
+    }
+  }
 }
-.about {
-  position: relative;
+
+@media screen and (min-width: 768px) {
+  .about__position {
+    display: flex;
+    margin: -10px;
+  }
+  .about__content {
+    width: calc((100% - 20px * 2) / 2);
+    margin: 10px;
+  }
 }
