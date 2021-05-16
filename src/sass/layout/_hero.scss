@@ -19,10 +19,6 @@
   text-align: center;
   @media screen and (min-width: 768px) {
     text-align: start;
-    max-width: 573px;
-  }
-  @media screen and (min-width: 1280px) {
-    max-width: 852px;
   }
 }
 .hero__button {
@@ -48,8 +44,14 @@
     margin-left: 0;
   }
 }
-// .hero__bg {
-//   background-image: url(../images/header/background-top_mobile.png);
-//   background-size: cover;
-//   background-repeat: no-repeat;
-// }
+.hero__bg {
+  background-image: url(../images/header/background-top_mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/header/background-top_tablet.png);
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/header/background-top_desktop.png);
+  }
+}
