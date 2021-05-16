@@ -1,6 +1,6 @@
-.hero {
-  padding-bottom: 310px;
-}
+// .hero {
+//   padding-bottom: 310px;
+// }
 .hero__title {
   font-size: 30px;
   line-height: 1.26;
@@ -46,13 +46,25 @@
 }
 .hero__bg {
   position: relative;
-  background-image: url(../images/header/background-top_mobile.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: 320px) {
+    background-image: url(../images/header/background-top_mobile.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/header/background-top@2x_mobile.png);
+    }
+  }
   @media screen and (min-width: 768px) {
     background-image: url(../images/header/background-top_tablet.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/header/background-top@2x_tablet.png);
+    }
   }
   @media screen and (min-width: 1280px) {
     background-image: url(../images/header/background-top_desktop.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/header/background-top@2x_desktop.png);
+    }
   }
 }
