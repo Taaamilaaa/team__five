@@ -4,10 +4,12 @@
 .about__item:not(:last-child) {
   margin-bottom: 15px;
 }
-.about__position::before {
-  contain: '';
-  width: 330px;
-  height: 350px;
-  background-color: blue;
-  background-image: url(../images/about-us/cupcake-box_desktop.png);
+.about__img {
+  display: block;
+  width: 290px;
+  height: 310px;
+  background-image: url(../images/about-us/cupcake-box_mobile.png);
+}
+.about {
+  position: relative;
 }
