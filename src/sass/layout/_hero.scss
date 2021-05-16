@@ -10,13 +10,20 @@
   margin-right: auto;
   margin-bottom: 3px;
   @media screen and (min-width: 1280px) {
+    max-width: 490px;
     font-size: 64px;
     line-height: 1.01;
-    width: 224px;
   }
 }
 .hero__container {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    max-width: 573px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 852px;
+  }
 }
 .hero__button {
   margin-left: auto;
@@ -28,4 +35,16 @@
   font-size: 16px;
   line-height: 1.25;
   margin-bottom: 37px;
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title,
+  .hero__button,
+  .hero__text {
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
