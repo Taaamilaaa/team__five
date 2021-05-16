@@ -1,3 +1,15 @@
 .about__title {
   text-align: center;
 }
+.about__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.about__img {
+  display: block;
+  width: 290px;
+  height: 310px;
+  background-image: url(../images/about-us/cupcake-box_mobile.png);
+}
+.about {
+  position: relative;
+}
