@@ -1,0 +1,34 @@
+.program__button {
+  max-width: 67px;
+  height: 65px;
+  font-size: 18px;
+  line-height: 3.6;
+
+  color: $pagination-color;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  font-family: $title-font;
+  font-weight: 400;
+  cursor: pointer;
+  outline: none;
+
+  transition: text-shadow transform 250ms;
+  transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    width: 158px;
+    height: 45px;
+  }
+}
+.program__button:hover,
+.program__button:focus {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+.program__button-text {
+  transition: all 0.3s;
+  transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}

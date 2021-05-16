@@ -1,3 +1,4 @@
+
 // контейнер секциии регистрация
 
 .regisration__container {
@@ -25,10 +26,17 @@
   left: 50%;
   top: 15px;
   transform: translate(-50%, 0);
+
+// // ---------заголовок секции------
+
+
   position: absolute;
   padding: 0;
   margin: 0;
   display: block;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-bottom: 11px;
   width: 106px;
   height: 65px;
   @media screen and (min-width: 768px) {
@@ -44,10 +52,12 @@
   width: 290px;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   border-radius: 150px 150px 0px 0px;
+
   padding-bottom: 47px;
   background-color: $registration-form-background;
   margin-left: auto;
   margin-right: auto;
+
   @media screen and (min-width: 768px) {
     width: 634px;
     height: 260px;
@@ -63,6 +73,7 @@
     width: 822px;
   }
 }
+
 
 // КОНТЕЙНЕР ДЛЯ ВРЕМЕНИ И ЦЕНЫ
 
@@ -105,6 +116,7 @@
 
 //ВРЕМЯ РЕГИСТРАЦИИ
 
+
 .registration__time {
   display: block;
   margin-left: auto;
@@ -112,11 +124,13 @@
   width: 114px;
   height: 44px;
   margin-bottom: 25px;
+
   font-family: $main-font;
   font-weight: 500;
   font-size: 18px;
   line-height: $desktop-main-line-height;
   color: $main-color;
+
   text-align: center;
   @media screen and (min-width: 768px) {
     margin-bottom: 34px;
@@ -132,7 +146,9 @@
   }
 }
 
+
 // Цена
+
 
 .registration__price {
   display: block;
@@ -140,11 +156,13 @@
   margin-right: auto;
   width: 50px;
   height: 22px;
+
   font-family: $main-font;
   font-weight: 500;
   font-size: 18px;
   line-height: $desktop-main-line-height;
   color: $main-color;
+
   text-align: center;
   @media screen and (min-width: 768px) {
     margin-left: 99px;
@@ -156,11 +174,13 @@
   }
 }
 
+
 //ФОРМА РЕГИСТРАЦИИ
 
 .form-registration {
   width: 265px;
   height: 173px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -225,6 +245,7 @@
     font-size: 18px;
     line-height: 1.22;
   }
+
 }
 
 //СТИЛИ НА LABEL
@@ -284,7 +305,6 @@
     padding-right: 98px;
   }
 }
-
 .form-registration__button {
   display: block;
   margin-left: auto;
@@ -293,10 +313,12 @@
   border-radius: 25px;
   width: 145px;
   height: 40px;
+
   font-family: Caveat Brush;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+
   text-align: center;
   color: $complementory_color;
   border: none;
@@ -304,4 +326,5 @@
     width: 158px;
     font-size: 24px;
   }
+
 }
