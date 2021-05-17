@@ -3,7 +3,7 @@
     display: flex;
     max-width: 635px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     max-width: 834px;
   }
@@ -124,8 +124,11 @@
 }
 .program-cards__image {
   position: absolute;
-  bottom: 92px;
-  right: 36px;
+
+  @media screen and (max-width: 1279.98px) {
+    bottom: 92px;
+    right: 36px;
+  }
   @media screen and (min-width: 1280px) {
     bottom: 123px;
     right: 42px;
