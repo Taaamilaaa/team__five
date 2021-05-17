@@ -1,10 +1,11 @@
 <section class="about">
   <div class="about__container container">
+
     <div class="about__position">
       <div class="about__img"></div>
 
       <div class="about__content">
-        <h2 class="about__title title">About us</h2>
+        <h2 class="about__title title" id="about-us">About us</h2>
         <ul class="about__list list">
           <li class="about__item">
             <span class="about__text">
@@ -18,22 +19,41 @@
               Eva has been baking since she was six years old and over the last 49 years, she has
               created hundreds of cakes for weddings and has baked for many celebrities. Eva and our
               shop have received multiple awards & recognition for excellence.
-            </span>
+            </span><span id="mydots"></span>
           </li>
 
           <li class="about__item">
-            <span class="about__text" id="more"
-              ><span id="dots"></span>
+            <span class="about__text" id="all">
               We are going to teach you how to cook with passion and sparkles in your eyes! We love
               what we do and believe you will enjoy our cooking atmosphere!
             </span>
           </li>
         </ul>
-
-        <button class="program__button" onclick="myFunction()" id="myBtn">
+        <button class="program__button" onclick="readMore()" id="btn">
           <span class="program__button-text">Read more</span>
         </button>
       </div>
     </div>
+
   </div>
 </section>
+
+<script>  
+  function readMore() {
+    var mydots = document.getElementById("mydots")
+    var all = document.getElementById("all");
+    var btn = document.getElementById("btn");
+
+    if (mydots.style.display === 'none') {
+      mydots.style.display === 'inline';
+      btn.innerHTML = 'Read more';
+      all.style.display = 'none';
+    }
+    else {
+      mydots.style.display = 'none';
+      btn.innerHTML = 'Read lees';
+      all.style.display = 'inline';
+    }
+  }
+</script>
+
