@@ -93,4 +93,8 @@
   &:focus {
     color: brown;
   }
+
+  &:focus .menu-container {
+    display: none;
+  }
 }
