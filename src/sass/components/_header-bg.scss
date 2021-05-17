@@ -1,6 +1,5 @@
 .hero__bg {
-  position: relative;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
 
   @media screen and (min-width: 320px) {
@@ -10,16 +9,14 @@
       background-image: url(../images/header/background-top@2x_mobile.png);
     }
   }
+
   @media screen and (min-width: 700px) {
-    // background-size: co;
-    background-size: cover;
     background-image: url(../images/header/background-top_tablet.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/header/background-top@2x_tablet.png);
     }
   }
-  @media screen and (min-width: 964px) {
-    background-size: contain;
+  @media screen and (min-width: 930px) {
     background-image: url(../images/header/background-top_desktop.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/header/background-top@2x_desktop.png);
@@ -38,6 +35,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    background-size: contain;
     background-position: 50%;
     background-repeat: no-repeat;
     background-image: url(../images/header/donuts_tablet.png);
@@ -48,7 +46,7 @@
 
   @media screen and (min-width: 1280px) {
     background-position: right;
-    background-size: contain;
+
     background-image: url(../images/header/donuts_desktop.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/header/donuts@2x_desktop.png);
