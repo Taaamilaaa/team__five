@@ -1,6 +1,6 @@
 <section class="reviews">
     <div class="container">
-        <h2 class="reviews-title">
+        <h2 class="reviews__title">
             Reviews
         </h2>
 
@@ -8,7 +8,7 @@
             <li class="reviews-item around left">
                 <article class="users-review">
                     <div class="wrapper-users-foto">
-                        <img src="./images/reviews/john_desktop.jpg" alt="Фотография пользователя" class="users-foto" height="110px">
+                        <img src="./images/reviews/john_desktop.jpg" alt="Фотография пользователя" class="users-foto">
                     </div>
                     <ul class="users-rate-list list">
                         <li class="users-rate-item">
@@ -52,7 +52,7 @@
             <li class="reviews-item center block">
                 <article class="users-review">
                     <div class="wrapper-users-foto">
-                        <img src="./images/reviews/will_desktop.jpg" alt="Фотография пользователя" class="users-foto" height="110px">
+                        <img src="./images/reviews/will_desktop.jpg" alt="Фотография пользователя" class="users-foto">
                     </div>
                     <ul class="users-rate-list list">
                         <li class="users-rate-item">
@@ -96,7 +96,7 @@
             <li class="reviews-item around right">
                 <article class="users-review">
                     <div class="wrapper-users-foto">
-                        <img src="./images/reviews/elisabeth_desktop.jpg" alt="Фотография пользователя" class="users-foto" height="110px">
+                        <img src="./images/reviews/elisabeth_desktop.jpg" alt="Фотография пользователя" class="users-foto">
                     </div>
                     <ul class="users-rate-list list">
                         <li class="users-rate-item">
@@ -141,7 +141,7 @@
                 <article class="users-review">
                     <div class="wrapper-users-foto">
                         <img src="./images/reviews/john_desktop.jpg" alt="Фотография пользователя" class="users-foto"
-                            height="110px">
+                           >
                     </div>
                     <ul class="users-rate-list list">
                         <li class="users-rate-item">
@@ -185,8 +185,7 @@
             <li class="reviews-item display-none">
                 <article class="users-review">
                     <div class="wrapper-users-foto">
-                        <img src="./images/reviews/john_desktop.jpg" alt="Фотография пользователя" class="users-foto"
-                            height="110px">
+                        <img src="./images/reviews/john_desktop.jpg" alt="Фотография пользователя" class="users-foto">
                     </div>
                     <ul class="users-rate-list list">
                         <li class="users-rate-item">
@@ -228,24 +227,31 @@
                 </article>
             </li>
         </ul>
-       
-<div class="reviews-counter-wrapper">
-    <button class="btnLeft">Left</button>
-    <input class="reviews-number" type="text" id="mytext" value="2">
-    <span class="reviews-number-delimeter">/</span>
-    <input class="reviews-number" type="text" id="" value="3">
-    <button class="btnRight">Right</button>
+     
+<!-- Счетчик отзывов для мобильной верстки         -->
+<div class="reviews__counter--mobile">
+    <button class="reviews__btn reviews__btn--prev-mobile "></button>
+    <input class="reviews__current-number" type="text" id="current-number-mobile" value="2">
+    <span class="reviews__number-delimeter">/</span>
+    <input class="reviews__all-number" type="text" id="all-number-mobile" value="">
+    <button class="reviews__btn reviews__btn--next-mobile"></button>
 </div>
 
-<div class="reviews-counter-wrapper1">
-    <button class="btnLeft1">Left</button>
-    <input class="reviews-number1" type="text" id="mytext1" value="2">
-    <span class="reviews-number-delimeter1">/</span>
-    <input class="reviews-number1" type="text" id="mytext2" value="3">
-    <button class="btnRight1">Right</button>
+<!-- Счетчик отзывов для tablet и desktop верстки         -->
+<div class="reviews__counter--desktop">
+    <button class="reviews__btn reviews__btn--prev-desktop"></button>
+    <input class="reviews__current-number" type="text" id="current-number-desktop" value="2">
+    <span class="reviews__number-delimeter">/</span>
+    <input class="reviews__all-number" type="text" id="all-number-desktop" value="">
+    <button class="reviews__btn reviews__btn--next-desktop"></button>
+
+
+        
 </div>
 
-<script src="../slider.js" class="btnRight"></script>
-<script src="../slider1.js" class="btnRight"></script>
+
+
+<script src="../slider-mobile.js"></script>
+<script src="../slider-desktop.js"></script>
     </div>
 </section>

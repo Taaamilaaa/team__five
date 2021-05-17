@@ -1,7 +1,7 @@
 
 // Берём кнопку вперёд
-let btnRight = document.querySelector(".btnRight");
-let btnLeft = document.querySelector(".btnLeft");
+let btnRight = document.querySelector(".reviews__btn--next-mobile");
+let btnLeft = document.querySelector(".reviews__btn--prev-mobile");
 // Берём слайды
 let slides = document.querySelectorAll(".reviews-item");
 // Объявляем переменную i 
@@ -26,7 +26,7 @@ btnRight.addEventListener("click", function () {
         // Добавляем класс block следующему слайду
         slides[i].classList.add("block");
     }
-    document.getElementById("mytext").value = i + 1;
+    document.getElementById("current-number-mobile").value = i + 1;
 })
 
 // Объявляем событие нажатия на кнопку назад
@@ -34,7 +34,7 @@ btnLeft.addEventListener("click", function () {
     // Увеличиваем переменную i
    
     // Условие если переменная i больше или равна количеству слайдов
-    if (i < 3 && i > 0) {
+    if (i < 5 && i > 0) {
         
         // Удаляем класс block предыдущему слайду
         slides[i].classList.remove("block");
@@ -46,8 +46,8 @@ btnLeft.addEventListener("click", function () {
     } else {
         // Иначе
         // Удаляем класс block предыдущему слайду
-        i = 2;
-            slides[i-2].classList.remove("block");
+        i = 4;
+            slides[i-4].classList.remove("block");
         
             // Добавляем класс block следующему слайду
             slides[i].classList.add("block");
@@ -55,7 +55,7 @@ btnLeft.addEventListener("click", function () {
         
     }
     --i
-    document.getElementById("mytext").value = i + 1;
+    document.getElementById("current-number-mobile").value = i + 1;
    
 })
 

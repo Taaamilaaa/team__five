@@ -1,14 +1,30 @@
 
+
+    
+
+
 // Берём кнопку вперёд
-let btnRight1 = document.querySelector(".btnRight1");
-let btnLeft1 = document.querySelector(".btnLeft1");
+let btnPrevD = document.querySelector(".reviews__btn--prev-desktop");
+let btnNextD = document.querySelector(".reviews__btn--next-desktop");
 // Берём слайды
 let slides = document.querySelectorAll(".reviews-item");
 // Объявляем переменную i 
-let  i = 1;
- 
+let i = 1;
+
+//Функция для контроля и вывода количества отзывов
+  window.onload = function () {
+      i = 1;
+
+        document.getElementById("all-number-mobile").value = slides.length;
+      document.getElementById("all-number-desktop").value = slides.length;
+     
+ };
+    
+
 // Объявляем событие нажатия на кнопку вперёд
-btnRight1.addEventListener("click", function () {
+btnNextD.addEventListener("click", function () {
+    //alert(i);
+   
     switch (i) {
         case 3:
             
@@ -16,9 +32,9 @@ btnRight1.addEventListener("click", function () {
               slides[i].classList.add("left");
               slides[i].classList.add("around");
            
-                slides[i - 4].classList.remove("right");
-             slides[i - 4].classList.remove("around");
-             slides[i - 4].classList.add("center");
+                slides[i + 1].classList.remove("right");
+             slides[i + 1].classList.remove("around");
+             slides[i + 1].classList.add("center");
 
               slides[i - 1].classList.remove("left");
               slides[i - 1].classList.remove("around");
@@ -33,50 +49,75 @@ btnRight1.addEventListener("click", function () {
    
         case 4:
 
-                slides[i].classList.remove("around");
-              slides[i].classList.remove("right");
-              slides[i].classList.add("center");
+                slides[i].classList.remove("center");
+              slides[i].classList.add("left");
+              slides[i].classList.add("around");
            
-                slides[i - 3].classList.remove("right");
-             slides[i - 3].classList.remove("around");
-             slides[i - 3].classList.add("center");
+                slides[i - 4].classList.remove("right");
+             slides[i - 4].classList.remove("around");
+             slides[i - 4].classList.add("center");
+
+              slides[i - 3].classList.remove("display-none");
+              slides[i - 3].classList.add("around");
+              slides[i - 3].classList.add("right");
+           
+          slides[i - 1].classList.add("display-none");
+              slides[i - 1].classList.remove("around");
+            slides[i - 1].classList.remove("left");
+            
+            i = -1;
+            break;
+            
+         case 0:
+
+               slides[i].classList.remove("center");
+               slides[i].classList.add("left");
+               slides[i].classList.add("around");
+           
+              slides[i + 1].classList.remove("right");
+              slides[i + 1].classList.remove("around");
+              slides[i + 1].classList.add("center");
+
+               slides[i + 2].classList.remove("display-none");
+               slides[i + 2].classList.add("around");
+               slides[i + 2].classList.add("right");
+           
+               slides[i + 4].classList.add("display-none");
+               slides[i + 4].classList.remove("around");
+               slides[i + 4].classList.remove("left");
+             break;
+                
+        default:
+                slides[i].classList.remove("center");
+              slides[i].classList.add("left");
+              slides[i].classList.add("around");
+           
+          slides[i + 1].classList.remove("right");
+              slides[i + 1].classList.remove("around");
+              slides[i + 1].classList.add("center");
 
               slides[i - 1].classList.remove("left");
               slides[i - 1].classList.remove("around");
               slides[i - 1].classList.add("display-none");
            
-          slides[i - 3].classList.remove("display-none");
-              slides[i + 1].classList.add("around");
-              slides[i + 1].classList.add("right");
-            break;
-            break;
-                
-        default:
-               slides[i].classList.remove("center");
-             slides[i].classList.add("left");
-             slides[i].classList.add("around");
-           
-         slides[i + 1].classList.remove("right");
-             slides[i + 1].classList.remove("around");
-             slides[i + 1].classList.add("center");
-
-             slides[i - 1].classList.remove("left");
-             slides[i - 1].classList.remove("around");
-             slides[i - 1].classList.add("display-none");
-           
-         slides[i + 2].classList.remove("display-none");
-             slides[i + 2].classList.add("around");
-             slides[i + 2].classList.add("right");
+          slides[i + 2].classList.remove("display-none");
+              slides[i + 2].classList.add("around");
+              slides[i + 2].classList.add("right");
             
             break;
     }
-    document.getElementById("mytext1").value = i + 1;
+    
     ++i;
+    document.getElementById("current-number-desktop").value = i + 1;
 })
 
+
+
 // Объявляем событие нажатия на кнопку назад
-btnLeft1.addEventListener("click", function () {
-     document.getElementById("mytext1").value = i;
+btnPrevD.addEventListener("click", function () {
+   
+    //alert(i);
+   
         switch (i) {
             case slides.length - 1:
                 //Left slide
@@ -114,6 +155,7 @@ btnLeft1.addEventListener("click", function () {
                 slides[slides.length - 1].classList.remove("display-none");
                 slides[slides.length - 1].classList.add("left");
                 slides[slides.length - 1].classList.add("around");
+                
                 break;
    
             case 0:
@@ -162,11 +204,12 @@ btnLeft1.addEventListener("click", function () {
     } 
    
     
-   
- 
-     --i;
-    //document.getElementById("mytext1").value = i + 1;
-    document.getElementById("mytext2").value = slides.length;
+    document.getElementById("current-number-desktop").value = i;
+    --i;
 })
+ 
+     
+    //document.getElementById("mytext1").value = i + 1;
+   
 
 

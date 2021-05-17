@@ -2,21 +2,20 @@
   --title-color: #2e2520;
 }
 
-p {
-  margin-bottom: 0;
-}
-
 .reviews {
-  outline: 1px solid red;
-
   .container {
+    @media screen and (max-width: 767px) {
+      padding-bottom: 30px;
+    }
+
     @media screen and (min-width: 768px) {
       max-width: 626px;
+      padding-bottom: 30px;
     }
   }
 }
 
-.reviews-title {
+.reviews__title {
   margin: 0;
 
   font-family: 'Caveat Brush', sans-serif;
@@ -34,12 +33,12 @@ p {
 }
 
 .reviews-item {
+  margin-left: auto;
+  margin-right: auto;
+
   @media screen and (max-width: 767px) {
     max-width: 290px;
   }
-  // max-width: 290px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .reviews-item.center {
@@ -50,10 +49,12 @@ p {
   .wrapper-users-foto {
     @media screen and (min-width: 768px) {
       width: 186px;
+      height: 186px;
     }
 
     @media screen and (min-width: 1280px) {
-      width: 100%;
+      width: 234px;
+      height: 234px;
     }
   }
 }
@@ -97,11 +98,18 @@ p {
     width: 100%;
     //height: 234px;
   }
+
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    //height: 234px;
+  }
 }
 
 .users-foto {
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .users-rate-list {
@@ -169,8 +177,8 @@ p {
   }
 }
 
-.reviews-number {
-  width: 20px;
+.reviews__all-number {
+  width: 15px;
   border: none;
 
   font-family: 'Montserrat', sans-serif;
@@ -183,7 +191,21 @@ p {
   color: #ab816c;
 }
 
-.reviews-number-delimeter {
+.reviews__current-number {
+  width: 15px;
+  border: none;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 14px;
+  line-height: 1.21;
+
+  text-align: center;
+
+  color: #ab816c;
+}
+
+.reviews__number-delimeter {
   font-family: 'Montserrat', sans-serif;
 
   font-size: 14px;
@@ -191,7 +213,7 @@ p {
   color: #ab816c;
 }
 
-.reviews-counter-wrapper {
+.reviews__counter--mobile {
   width: 200px;
   margin-right: auto;
   margin-left: auto;
@@ -202,6 +224,30 @@ p {
   }
 }
 
+.reviews__counter--desktop {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .display-none {
-  display: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.reviews__btn {
+  border: none;
+  width: 35px;
+  height: 17px;
+
+  background: url('../../src/images/reviews/next.jpg') no-repeat;
+
+  background-position: center center;
+  cursor: pointer;
 }
