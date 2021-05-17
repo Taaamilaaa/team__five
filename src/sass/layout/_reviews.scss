@@ -22,31 +22,31 @@
   font-size: 24px;
   line-height: 2.71;
   text-align: center;
-
   color: #2e2520;
 }
 
-.reviews-list {
+.reviews__list {
   position: relative;
   display: flex;
   margin-bottom: 30px;
 }
 
-.reviews-item {
+.reviews__item {
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (max-width: 767px) {
     max-width: 290px;
+    display: none;
   }
 }
 
-.reviews-item.center {
+.reviews__item.center {
   @media screen and (min-width: 768px) {
     width: 100%;
   }
 
-  .wrapper-users-foto {
+  .reviews__wrapper-foto {
     @media screen and (min-width: 768px) {
       width: 186px;
       height: 186px;
@@ -59,33 +59,33 @@
   }
 }
 
-.reviews-item.around.left {
+.reviews__item.around.left {
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 0;
     left: 0;
     width: 136px;
 
-    .reviews-text {
+    .reviews__text {
       display: none;
     }
   }
 }
 
-.reviews-item.around.right {
+.reviews__item.around.right {
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 0;
     right: 0;
     width: 136px;
 
-    .reviews-text {
+    .reviews__text {
       display: none;
     }
   }
 }
 
-.wrapper-users-foto {
+.reviews__wrapper-foto {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 6px;
@@ -105,31 +105,31 @@
   }
 }
 
-.users-foto {
+.reviews__foto {
   margin-right: auto;
   margin-left: auto;
   width: 100%;
   height: 100%;
 }
 
-.users-rate-list {
+.reviews__rate-list {
   display: flex;
   margin: 0 auto;
 
   width: 136px;
 }
 
-.users-rate-item:not(:last-child) {
+.reviews__rate-item:not(:last-child) {
   margin-right: 4px;
 }
 
-.users-rate-icon {
+.reviews__star-icon {
   width: 24px;
   height: 24px;
   fill: #ab816c;
 }
 
-.users-name {
+.reviews__users-name {
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   font-weight: 500;
@@ -141,7 +141,7 @@
   color: #2e2520;
 }
 
-.reviews-text {
+.reviews__text {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -150,22 +150,9 @@
   color: #2e2520;
 }
 
-//Tests
-// .slides {
-//   width: 1000px;
-//   height: 500px;
-// }
-
-.reviews-item {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-
 .block {
   @media screen and (max-width: 767px) {
     display: block;
-    //object-fit: cover;
     width: 100%;
     height: 100%;
   }

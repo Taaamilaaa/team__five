@@ -3,7 +3,7 @@
 let btnRight = document.querySelector(".reviews__btn--next-mobile");
 let btnLeft = document.querySelector(".reviews__btn--prev-mobile");
 // Берём слайды
-let slides = document.querySelectorAll(".reviews-item");
+let slides = document.querySelectorAll(".reviews__item");
 // Объявляем переменную i 
 let i = 1;
  

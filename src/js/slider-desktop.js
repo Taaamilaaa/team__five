@@ -7,7 +7,7 @@
 let btnPrevD = document.querySelector(".reviews__btn--prev-desktop");
 let btnNextD = document.querySelector(".reviews__btn--next-desktop");
 // Берём слайды
-let slides = document.querySelectorAll(".reviews-item");
+let slides = document.querySelectorAll(".reviews__item");
 // Объявляем переменную i 
 let i = 1;
 
