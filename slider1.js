@@ -9,52 +9,69 @@ let  i = 1;
  
 // Объявляем событие нажатия на кнопку вперёд
 btnRight1.addEventListener("click", function () {
-    // Увеличиваем переменную i
-    
-    ++i;
-    // Условие если переменная i больше или равна количеству слайдов
-    if (i >= slides.length) {
-        // Работа с левым слайдом
+    switch (i) {
+        case 3:
+            
+              slides[i].classList.remove("center");
+              slides[i].classList.add("left");
+              slides[i].classList.add("around");
+           
+                slides[i - 4].classList.remove("right");
+             slides[i - 4].classList.remove("around");
+             slides[i - 4].classList.add("center");
 
-
-        //slides[i - 1].classList.remove("block");
-        //slides[i - 1].classList.remove("center");
+              slides[i - 1].classList.remove("left");
+              slides[i - 1].classList.remove("around");
+              slides[i - 1].classList.add("display-none");
+           
+          slides[i - 3].classList.remove("display-none");
+              slides[i - 3].classList.add("around");
+              slides[i - 3].classList.add("right");
+            break;
+            
         
-        //slides[i - 1].classList.add("left");
-        //slides[i - 1].classList.add("around");
-//slides[i - 1].classList.remove("center");
-        // Присваиваем переменной i ноль
-        i = 0;
-        // Добавляем класс block следующему слайду
-        //slides[i].classList.add("block");
-       // slides[i].classList.add("center");
-        //slides[i+1].classList.add("around");
-        //slides[i].classList.add("center");
-    } else { // Иначе
-        // Работа с левым слайдом
-       // slides[i - 2].classList.remove("around");
-        //slides[i - 2].classList.remove("left");
-        //slides[i - 2].classList.add("display-none");
+   
+        case 4:
 
-       // Работа с центральным слайдом
-        //slides[i - 1].classList.remove("center");
-        //slides[i - 1].classList.add("left");
-        //slides[i - 1].classList.add("around");
+                slides[i].classList.remove("around");
+              slides[i].classList.remove("right");
+              slides[i].classList.add("center");
+           
+                slides[i - 3].classList.remove("right");
+             slides[i - 3].classList.remove("around");
+             slides[i - 3].classList.add("center");
 
-        // Работа с правым слайдом
-        //slides[i].classList.remove("right");
-        //slides[i].classList.remove("around");
-        //slides[i].classList.add("center");
-        
+              slides[i - 1].classList.remove("left");
+              slides[i - 1].classList.remove("around");
+              slides[i - 1].classList.add("display-none");
+           
+          slides[i - 3].classList.remove("display-none");
+              slides[i + 1].classList.add("around");
+              slides[i + 1].classList.add("right");
+            break;
+            break;
+                
+        default:
+               slides[i].classList.remove("center");
+             slides[i].classList.add("left");
+             slides[i].classList.add("around");
+           
+         slides[i + 1].classList.remove("right");
+             slides[i + 1].classList.remove("around");
+             slides[i + 1].classList.add("center");
 
-        
-       // slides[i].classList.remove("right");
-        // Добавляем класс block следующему слайду
-        //slides[i].classList.add("block");
-       // slides[i].classList.add("center");
-        //slides[i+1].classList.add("around");
+             slides[i - 1].classList.remove("left");
+             slides[i - 1].classList.remove("around");
+             slides[i - 1].classList.add("display-none");
+           
+         slides[i + 2].classList.remove("display-none");
+             slides[i + 2].classList.add("around");
+             slides[i + 2].classList.add("right");
+            
+            break;
     }
     document.getElementById("mytext1").value = i + 1;
+    ++i;
 })
 
 // Объявляем событие нажатия на кнопку назад
