@@ -10,6 +10,10 @@
 }
 .program-text-block {
   width: 100%;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.2;
+  }
 }
 .program__title {
   font-weight: 400;
@@ -47,6 +51,7 @@
     }
   }
 }
+//
 .program__text:not(:last-child) {
   margin-bottom: 10px;
   max-width: 392px;

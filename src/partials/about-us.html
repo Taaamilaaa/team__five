@@ -38,21 +38,20 @@
   </div>
 </section>
 
-<script>  
-  function readMore() {
-    var mydots = document.getElementById("mydots")
-    var all = document.getElementById("all");
-    var btn = document.getElementById("btn");
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
 
-    if (mydots.style.display === 'none') {
-      mydots.style.display === 'inline';
-      btn.innerHTML = 'Read more';
-      all.style.display = 'none';
-    }
-    else {
-      mydots.style.display = 'none';
-      btn.innerHTML = 'Read lees';
-      all.style.display = 'inline';
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Less";
+      moreText.style.display = "inline";
     }
   }
 </script>
