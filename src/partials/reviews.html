@@ -10,7 +10,20 @@
             <li class="reviews__item around left">
                 <article class="reviews__review">
                     <div class="reviews__wrapper-foto">
-                        <img src="./images/reviews/john_desktop.jpg" alt="Фотография пользователя" class="reviews__foto">
+                        <picture>
+                            <source srcset="./images/reviews/john_desktop.webp 1x, ./images/reviews/john@2x_desktop.webp 2x"
+                                media="(min-width: 1280px)" type="image/webp">
+                             <source srcset="./images/reviews/john_desktop.jpg 1x, ./images/reviews/john@2x_desktop.jpg 2x"
+                                media="(min-width: 1280px)"> 
+                            <source srcset="./images/reviews/john_tablet.webp 1x, ./images/reviews/john@2x_tablet.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/john_tablet.jpg 1x, ./images/reviews/john@2x_tablet.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/reviews/john_mobile.webp 1x, ./images/reviews/john@2x_mobile.webp 2x" media="(max-width: 767px)"
+                                type="image/webp">
+                            <source srcset="./images/reviews/john_mobile.jpg 1x, ./images/reviews/john@2x_mobile.jpg 2x" media="(max-width: 767px)"> 
+                            <img src="./images/reviews/john_mobile.jpg" alt="Фотография пользователя John" class="reviews__foto">
+                        </picture>
+                        
                     </div>
                     <ul class="reviews__rate-list list">
                         <li class="reviews__rate-item">
@@ -35,7 +48,7 @@
                         </li>
                         <li class="reviews__rate-item">
                             <svg class="reviews__star-icon">
-                                <use href="../src/images/sprite.svg#icon-star"></use>
+                                <use href="../src/images/sprite.svg#icon-star-light"></use>
                             </svg>
                         </li>
                     </ul>
@@ -54,7 +67,21 @@
             <li class="reviews__item center block">
                 <article class="reviews__review">
                     <div class="reviews__wrapper-foto">
-                        <img src="./images/reviews/will_desktop.jpg" alt="Фотография пользователя" class="reviews__foto">
+                        <picture>
+                            <source srcset="./images/reviews/will_desktop.webp 1x, ./images/reviews/will@2x_desktop.webp 2x"
+                                media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="./images/reviews/will_desktop.jpg 1x, ./images/reviews/will@2x_desktop.jpg 2x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/reviews/will_tablet.webp 1x, ./images/reviews/will@2x_tablet.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/reviews/will_tablet.jpg 1x, ./images/reviews/will@2x_tablet.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/reviews/will_mobile.webp 1x, ./images/reviews/will@2x_mobile.webp 2x"
+                                media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./images/reviews/will_mobile.jpg 1x, ./images/reviews/will@2x_mobile.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/reviews/will_mobile.jpg" alt="Фотография пользователя Will" class="reviews__foto">
+                        </picture>
                     </div>
                     <ul class="reviews__rate-list list">
                         <li class="reviews__rate-item">
@@ -98,7 +125,21 @@
             <li class="reviews__item around right">
                 <article class="reviews__review">
                     <div class="reviews__wrapper-foto">
-                        <img src="./images/reviews/elisabeth_desktop.jpg" alt="Фотография пользователя" class="reviews__foto">
+                        <picture>
+                            <source srcset="./images/reviews/elisabeth_desktop.webp 1x, ./images/reviews/elisabeth@2x_desktop.webp 2x"
+                                media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="./images/reviews/elisabeth_desktop.jpg 1x, ./images/reviews/elisabeth@2x_desktop.jpg 2x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/reviews/elisabeth_tablet.webp 1x, ./images/reviews/elisabeth@2x_tablet.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/reviews/elisabeth_tablet.jpg 1x, ./images/reviews/elisabeth@2x_tablet.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/reviews/elisabeth_mobile.webp 1x, ./images/reviews/elisabeth@2x_mobile.webp 2x"
+                                media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./images/reviews/elisabeth_mobile.jpg 1x, ./images/reviews/elisabeth@2x_mobile.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/reviews/elisabeth_mobile.jpg" alt="Фотография пользователя Will" class="reviews__foto">
+                        </picture>
                     </div>
                     <ul class="reviews__rate-list list">
                         <li class="reviews__rate-item">
@@ -142,7 +183,7 @@
             <li class="reviews__item display-none">
                 <article class="reviews__review">
                     <div class="reviews__wrapper-foto">
-                        <img src="./images/reviews/john_desktop.jpg" alt="Фотография пользователя" class="reviews__foto"
+                        <img src="./images/reviews/reviews_4.jpg" alt="Фотография пользователя" class="reviews__foto"
                            >
                     </div>
                     <ul class="reviews__rate-list list">
@@ -172,7 +213,7 @@
                             </svg>
                         </li>
                     </ul>
-                    <p class="reviews__users-name">44444</p>
+                    <p class="reviews__users-name">Reviews # 4</p>
                     <p class="reviews__text">
                         Last time I have visited a cooking course by Eva
                         I was impressed with the way she explained everything
@@ -187,7 +228,7 @@
             <li class="reviews__item display-none">
                 <article class="reviews__review">
                     <div class="reviews__wrapper-foto">
-                        <img src="./images/reviews/john_desktop.jpg" alt="Фотография пользователя" class="reviews__foto">
+                        <img src="./images/reviews/reviews_5.jpg" alt="Фотография пользователя" class="reviews__foto">
                     </div>
                     <ul class="reviews__rate-list list">
                         <li class="reviews__rate-item">
@@ -216,7 +257,7 @@
                             </svg>
                         </li>
                     </ul>
-                    <p class="reviews__users-name">55555</p>
+                    <p class="reviews__users-name">Reviews # 5</p>
                     <p class="reviews__text">
                         Last time I have visited a cooking course by Eva
                         I was impressed with the way she explained everything
