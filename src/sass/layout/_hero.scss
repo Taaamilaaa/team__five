@@ -1,12 +1,12 @@
-// .hero {
-//   padding-bottom: 310px;
-// }
 .hero {
+  @media screen and (min-width: 320px) {
+    padding-bottom: 300px;
+  }
   @media screen and (min-width: 768px) {
-    padding-bottom: 80px;
+    padding-bottom: 95px;
   }
   @media screen and (min-width: 1280px) {
-    padding-bottom: 55px;
+    padding-bottom: 130px;
   }
 }
 .hero__title {
