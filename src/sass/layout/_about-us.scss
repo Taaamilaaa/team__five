@@ -3,48 +3,59 @@
   @media screen and (min-width: 768px) {
     text-align: start;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.8;
+  }
+}
+.about__text {
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.2;
+  }
 }
 .about__item:not(:last-child) {
   margin-bottom: 15px;
 }
-.about__img {
-  display: block;
-  background-repeat: no-repeat;
-  background-size: contain;
+.about {
   @media screen and (min-width: 320px) {
-    width: 290px;
-    height: 310px;
-    background-image: url(../images/about-us/cupcake-box_mobile.png);
+    padding-top: 300px;
+    background: url(../images/about-us/cupcake-box_mobile.png) 50% -5% no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about-us/cupcake-box@2x_mobile.png);
+      padding-top: 300px;
+      background: url(../images/about-us/cupcake-box@2x_mobile.png) 50% -5% no-repeat;
     }
   }
   @media screen and (min-width: 768px) {
-    width: 330px;
-    height: 352px;
-    background-image: url(../images/about-us/cupcake-box_tablet.png);
+    padding-top: 0px;
+    padding-bottom: 10px;
+    background: url(../images/about-us/cupcake-box_tablet.png) left / contain no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about-us/cupcake-box@2x_tablet.png);
+      padding-top: 0px;
+      padding-bottom: 10px;
+      background: url(../images/about-us/cupcake-box@2x_tablet.png) 50% -5% no-repeat;
     }
   }
-
   @media screen and (min-width: 1280px) {
-    width: 512px;
-    height: 547px;
-    background-image: url(../images/about-us/cupcake-box_desktop.png);
+    padding-bottom: 35px;
+    padding-top: 60px;
+    background: url(../images/about-us/cupcake-box_desktop.png) 15% 0 / contain no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about-us/cupcake-box@2x_desktop.png);
+      padding-top: 0px;
+      padding-bottom: 60px;
+      background: url(../images/about-us/cupcake-box@2x_desktop.png) 50% -5% no-repeat;
     }
   }
 }
 
-@media screen and (min-width: 768px) {
-  .about__position {
-    display: flex;
-    margin: -10px;
+.about__content {
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    margin-left: auto;
   }
-  .about__content {
-    width: calc((100% - 20px * 2) / 2);
-    margin: 10px;
+}
+@media screen and (max-width: 1179px) {
+  #all {
+    display: none;
   }
 }
