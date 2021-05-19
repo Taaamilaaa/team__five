@@ -1,36 +1,65 @@
-// .footer__bg {
-//   @media screen and (max-width: 767px) {
-//     background-image: url('../../src/images/footer/footer-bg-mobile.png');
-//     background-repeat: no-repeat;
-//     background-size: initial;
-//     background-position: center 57px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     max-width: 773px;
-//     background-image: url('../../src/images/footer/footer-bg-tablet-2.png'),
-//       url('../../src/images/footer/footer-bg-tablet.png');
-//     background-repeat: no-repeat;
-//     background-position: right 650px, center -10px;
-//     background-attachment: scroll;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     max-width: 1280px;
-//     background-image: url('../../src/images/footer/footer-bg-desktop-2.png'),
-//       url('../../src/images/footer/footer-bg-desktop.png');
-//     background-repeat: no-repeat;
-//     background-position: right 650px, center -20px;
-//     background-attachment: scroll;
-//   }
-// }
-
 .footer__bg {
-  background: url(../images/footer/footer-bg-mobile.png) 0 0 no-repeat,
-    url(../images/footer/flour_mobile.png) 0 0 no-repeat;
+  background: url(../images/footer/flour_mobile.png) right bottom no-repeat,
+    url(../images/footer/footer-bg_mobile.png) 50% 0 / contain no-repeat;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background: url(../images/footer/footer-bg-mobile.png) 0 0 no-repeat,
-      url(../images/footer/flour_mobile.png) 0 0 no-repeat;
+    background: url(../images/footer/flour@2x_mobile.png) right bottom no-repeat,
+      url(../images/footer/footer-bg@2x_mobile.png) 50% 0 / contain no-repeat;
+  }
+  @media screen and (min-width: 400px) {
+    background: url(../images/footer/flour_mobile.png) right bottom no-repeat,
+      url(../images/footer/footer-bg_mobile.png) 50% 0 / cover no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(../images/footer/flour@2x_mobile.png) right bottom no-repeat,
+        url(../images/footer/footer-bg@2x_tablet.png) 50% 0 / cover no-repeat;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background: url(../images/footer/flour_tablet.png) right bottom no-repeat,
+      url(../images/footer/party-confetti_tablet.png) 100% 70% no-repeat,
+      url(../images/footer/bited-donut_tablet.png) 0 55% no-repeat,
+      url(../images/footer/footer-bg_tablet.png) 50% 0 / contain no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(../images/footer/flour@2x_tablet.png) right bottom no-repeat,
+        url(../images/footer/party-confetti@2x_tablet.png) 100% 70% no-repeat,
+        url(../images/footer/bited-donut@2x_tablet.png) 0 55% no-repeat,
+        url(../images/footer/footer-bg@2x_tablet.png) 50% 0 / contain no-repeat;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    background: url(../images/footer/flour_tablet.png) right bottom no-repeat,
+      url(../images/footer/party-confetti_tablet.png) 100% 80% no-repeat,
+      url(../images/footer/bited-donut_tablet.png) 0 55% no-repeat,
+      url(../images/footer/footer-bg_tablet.png) 50% 0 / cover no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(../images/footer/flour@2x_tablet.png) right bottom no-repeat,
+        url(../images/footer/party-confetti@2x_tablet.png) 100% 70% no-repeat,
+        url(../images/footer/bited-donut@2x_tablet.png) 0 55% no-repeat,
+        url(../images/footer/footer-bg@2x_desktop.png) 50% 0 / cover no-repeat;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    background: url(../images/footer/flour_tablet.png) right bottom no-repeat,
+      url(../images/footer/party-confetti_desktop.png) 95% 80% no-repeat,
+      url(../images/footer/bited-donut_desktop.png) 10% 55% no-repeat,
+      url(../images/footer/footer-bg_desktop.png) 50% 0 / cover no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(../images/footer/flour@2x_tablet.png) right bottom no-repeat,
+        url(../images/footer/party-confetti@2x_desktop.png) 100% 80% no-repeat,
+        url(../images/footer/bited-donut@2x_desktop.png) 10% 55% no-repeat,
+        url(../images/footer/footer-bg@2x_desktop.png) 50% 0 / cover no-repeat;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background: url(../images/footer/flour_desktop.png) right bottom no-repeat,
+      url(../images/footer/party-confetti_desktop.png) 100% 80% no-repeat,
+      url(../images/footer/bited-donut_desktop.png) 5% 52% no-repeat,
+      url(../images/footer/footer-bg_desktop.png) 50% top / cover no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(../images/footer/flour@2x_desktop.png) right bottom no-repeat,
+        url(../images/footer/party-confetti@2x_desktop.png) 100% 70% no-repeat,
+        url(../images/footer/bited-donut@2x_desktop.png) 0 55% no-repeat,
+        url(../images/footer/footer-bg@2x_desktop.png) 50% 0 / cover no-repeat;
+    }
   }
 }
