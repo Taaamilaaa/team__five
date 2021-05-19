@@ -15,10 +15,11 @@
   line-height: 2.7;
   cursor: pointer;
   outline: none;
+
   &:hover,
   &:focus {
     background-color: $hover-color;
-    border: 2px $outline-color solid;
+    border: 1px $outline-color solid;
     border-radius: 25px;
   }
   @media screen and (min-width: 1280px) {
