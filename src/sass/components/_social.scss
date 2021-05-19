@@ -8,12 +8,12 @@
   outline: none;
   &:hover,
   &:focus {
-    border: 1px $outline-color solid;
+    background-color: $accent-color;
     border-radius: 25px;
   }
   &:hover .social__icon,
   &:focus .social__icon {
-    fill: $hover-color;
+    fill: $complementory_color;
   }
   @media screen and (min-width: 1200px) {
     width: 36px;

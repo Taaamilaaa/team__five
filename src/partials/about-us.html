@@ -1,9 +1,6 @@
 <section class="about">
   <div class="about__container container">
-
     <div class="about__position">
-      <div class="about__img"></div>
-
       <div class="about__content">
         <h2 class="about__title title" id="about-us">About us</h2>
         <ul class="about__list list">
@@ -19,19 +16,17 @@
               Eva has been baking since she was six years old and over the last 49 years, she has
               created hundreds of cakes for weddings and has baked for many celebrities. Eva and our
               shop have received multiple awards & recognition for excellence.
-            </span>
+            </span><span id="mydots"></span>
           </li>
 
           <li class="about__item">
-            <span class="about__text is-hidden" id="more"
-              ><span id="dots"></span>
+            <span class="about__text is-hidden" id="all">
               We are going to teach you how to cook with passion and sparkles in your eyes! We love
               what we do and believe you will enjoy our cooking atmosphere!
             </span>
           </li>
         </ul>
-
-        <button class="program__button" onclick="myFunction()" id="myBtn">
+        <button class="program__button" onclick="readMore()" id="button">
           <span class="program__button-text">Read more</span>
         </button>
       </div>
@@ -39,20 +34,22 @@
 
   </div>
 </section>
-<script>
-  function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
 
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
+<script>
+  function readMore() {
+    var mydots = document.getElementById("mydots");
+    var allText = document.getElementById("all");
+    var buttonText = document.getElementById("button");
+
+    if (mydots.style.display === "none") {
+      mydots.style.display = "inline";
+      buttonText.innerHTML = "Read more";
+      allText.style.display = "none";
     } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Less";
-      moreText.style.display = "inline";
+      mydots.style.display = "none";
+      buttonText.innerHTML = "Less";
+      allText.style.display = "inline";
     }
   }
 </script>
+

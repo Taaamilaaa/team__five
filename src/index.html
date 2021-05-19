@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donut Masterclass</title>
+    <link rel="shortcut icon" href="../src/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap"
@@ -19,33 +20,39 @@
     <include src="./partials/menu.html"></include>
 
     <!-- Wrapper 1 -->
-    <div class="hero__bg">
-      <!-- Header -->
-      <include src="./partials/header.html"></include>
-      <!-- Hero -->
-      <include src="./partials/hero.html"></include>
-      <!-- About-us -->
-      <include src="./partials/about-us.html"></include>
+    <div class="header__bg">     
+        <!-- Header -->
+        <include src="./partials/header.html"></include>
+        <!-- Hero -->
+        <include src="./partials/hero.html"></include>
+        <!-- About-us -->
+        <include src="./partials/about-us.html"></include>     
     </div>
-
     <!-- Program -->
     <include src="./partials/program.html"></include>
 
     <!-- Wrapper 2 -->
+
     <div class="footer__bg">
       <!--Reviews  -->
       <include src="./partials/reviews.html"></include>
       <!-- Registration -->
+      <div class="background__registration">
       <include src="./partials/registration.html"></include>
+      </div>
       <!-- Footer -->
       <include src="./partials/footer.html"></include>
       <include src="./partials/modal.html"></include>
-    </div>    
 
+    </div>
 
     <script src="./index.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+
+    <script src="./js/read_more_btn.js"></script>
+    <script src="./js/program-buttons.js"></script>
+
   </body>
 </html>
 

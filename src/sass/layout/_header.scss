@@ -38,6 +38,10 @@ text-align: start;
     margin-right: 38px;
 }
 
+.site-nav__link:hover,
+.site-nav__link:focus{
+   color: $accent-color; 
+}
 
 
 
