@@ -6,8 +6,10 @@
   width: 27px;
   height: 27px;
   outline: none;
+
   &:hover,
   &:focus {
+    border: 1px $outline-color solid;
     background-color: $accent-color;
     border-radius: 25px;
   }
