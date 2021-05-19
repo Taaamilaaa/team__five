@@ -1,5 +1,4 @@
 <section class="registration">
-
     <div class="regisration__container container">
         <h2 class="title regisration__tittle">Registration</h2>
         <div class="container__content ">
@@ -11,30 +10,24 @@
                     $ 699
                 </span>
             </div>
-
             <form class="form-registration">
                 <p class="form-registration__title">
                     Apply your personal info for registration
                 </p>
-
                 <label class="general-label-registration form-registration__label-name">
                     <input class="general-input-registration form-registration__input-name" type="text" name="username"
-                        pattern="^[a-zA-Z]+\s[a-zA-Z]+$" placeholder="Your name" required />
+                        pattern="^[a-zA-Z]+$+[0-9]{6,10}" placeholder="Your name" required />
                 </label>
                 <label class="general-label-registration form-registration__label-tel">
                     <input class="general-input-registration form-registration__input-tel" type="tel" name="tel"
-                        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" placeholder="Phone number"
-                        required />
+                        pattern="[\+]\[0-9]{9,15}" placeholder="Phone number" required />
                 </label>
                 <label class="general-label-registration form-registration__label-email">
                     <input class="general-input-registration form-registration__input-email" type="email" name="email"
-                        pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" placeholder="Email" required />
+                        pattern="/\A[^@]+@([^@\.]+\.)+[^@\.]+\z/" placeholder="Email" required />
                 </label>
+                <button type="submit" class="form-registration__button button">Register</button>
             </form>
-            <div class="container__content-button">
-                <button class="form-registration__button">Register</button>
-            </div>
-
         </div>
     </div>
 </section>
