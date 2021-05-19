@@ -1,0 +1,26 @@
+.footer__bg.container {
+  @media screen and (max-width: 767px) {
+    background-image: url('../../src/images/footer/footer-bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: center 57px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 773px;
+    background-image: url('../../src/images/footer/footer-bg-tablet-2.png'),
+      url('../../src/images/footer/footer-bg-tablet.png');
+    background-repeat: no-repeat;
+    background-position: right 650px, center -10px;
+    background-attachment: scroll;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    background-image: url('../../src/images/footer/footer-bg-desktop-2.png'),
+      url('../../src/images/footer/footer-bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: right 650px, center -20px;
+    background-attachment: scroll;
+  }
+}
