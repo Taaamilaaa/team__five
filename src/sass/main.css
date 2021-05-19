@@ -19,7 +19,7 @@ body {
   color: #2e2520;
 }
 
-@media screen and (min-whidth: 1200px) {
+@media screen and (min-width: 1200px) {
   body {
     font-size: 18px;
     line-height: 1.22;
@@ -60,7 +60,7 @@ img {
   line-height: 2.71;
 }
 
-@media screen and (min-whidth: 1280px) {
+@media screen and (min-width: 1280px) {
   .title {
     font-size: 36px;
     line-height: 1.81;
@@ -642,7 +642,7 @@ body.modal-open {
   text-align: center;
 }
 
-=======
+
 @media screen and (min-width: 768px) {
   .hero {
     padding-bottom: 80px;
@@ -1253,6 +1253,7 @@ body.modal-open {
     height: 180px;
   }
 }
+  }
 
 .program-cards__title {
   margin-top: 50px;
@@ -3544,4 +3545,4 @@ body.modal-open {
   background-position: center center;
   cursor: pointer;
 }
-/*# sourceMappingURL=main.css.map */
+/* # sourceMappingURL=main.css.map */
