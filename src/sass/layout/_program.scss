@@ -79,6 +79,13 @@
     justify-content: flex-start;
   }
 }
+.program-cards__item::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-image: url(./images/award-solid.svg);
+  background-repeat: no-repeat;
+}
 
 .program-cards__item {
   width: 142px;
