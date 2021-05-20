@@ -1,7 +1,7 @@
 .menu__logo {
   width: 190px;
   height: 85px;
-  fill: brown;
+  fill: $main-color;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -48,7 +48,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  fill: #2e2520;
+  fill: $main-color;
 
   @media screen and (min-width: 768px) {
     top: 26px;
@@ -61,7 +61,7 @@
 
   &:hover,
   &:focus {
-    fill: brown;
+    fill: $accent-color;
   }
 }
 
@@ -86,13 +86,14 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2;
-  color: #2e2520;
+  color: $main-color;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    color: brown;
+    color: $accent-color;
+    cursor: pointer;
   }
 
   &:focus .menu-container {
