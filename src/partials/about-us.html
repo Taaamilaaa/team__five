@@ -20,36 +20,24 @@
           </li>
 
           <li class="about__item">
-            <span class="about__text is-hidden" id="all">
+            <span class="about__text is-hidden" more-text>
               We are going to teach you how to cook with passion and sparkles in your eyes! We love
               what we do and believe you will enjoy our cooking atmosphere!
             </span>
           </li>
         </ul>
-        <button class="program__button" onclick="myFunction()" id="button">
+        <button class="program__button" about-button-more>
           <span class="program__button-text">Read more</span>
+        </button>
+        <button class="program__button is-hidden" about-button-less>
+          <span class="program__button-text ">Less</span>
         </button>
       </div>
     </div>
 
   </div>
+  <script src="../src/js/about-read-more.js"></script>
 </section>
 
-<script>
-  function myFunction() {
-    var mydots = document.getElementById("mydots");
-    var allText = document.getElementById("all");
-    var buttonText = document.getElementById("button");
 
-    if (mydots.style.display === "none") {
-      mydots.style.display = "inline";
-      buttonText.innerHTML = "Read more";
-      allText.style.display = "none";
-    } else {
-      mydots.style.display = "none";
-      buttonText.innerHTML = "Less";
-      allText.style.display = "inline";
-    }
-  }
-</script>
 
