@@ -271,6 +271,7 @@
 
 .general-input-registration:not(:placeholder-shown):required:invalid {
   color: $form-input-invalid;
+  background-color: rgb(255, 0, 0, 0.5);
 }
 
 .form-registration__label-name {
