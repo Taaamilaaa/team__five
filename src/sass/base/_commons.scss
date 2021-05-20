@@ -61,9 +61,11 @@ img {
   }
   @media screen and (min-width: 768px) {
     max-width: 665px;
+    width: 100%;
   }
   @media screen and (min-width: 1280px) {
     max-width: 852px;
+    width: 100%;
   }
 }
 
