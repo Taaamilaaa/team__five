@@ -16,30 +16,30 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: url(../images/header/donuts@2x_tablet.png) 80% top / 378px 396px no-repeat,
         url(../images/about-us/cupcake-box@2x_tablet.png) 5% 375px / 330px 352px no-repeat,
-        url(../images/header/background-top@2x_tablet.png) 50% top / contain no-repeat;
+        url(../images/header/background-top@2x_tablet.png) 50% 0 / contain no-repeat;
     }
   }
   @media screen and (min-width: 1000px) {
     background: url(../images/header/donuts_tablet.png) 80% top no-repeat,
-      url(../images/about-us/cupcake-box_tablet.png) 5% bottom no-repeat,
+      url(../images/about-us/cupcake-box_tablet.png) 10px 375px / 330px 352px no-repeat,
       url(../images/header/background-top_desktop.png) 50% bottom / cover no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: url(../images/header/donuts@2x_tablet.png) 80% top no-repeat,
-        url(../images/about-us/cupcake-box@2x_tablet.png) 5% bottom / contain no-repeat,
+      background: url(../images/header/donuts@2x_tablet.png) 80% top / 378px 396px no-repeat,
+        url(../images/about-us/cupcake-box@2x_tablet.png) 5% 375px / 330px 352px no-repeat,
         url(../images/header/background-top@2x_desktop.png) 50% bottom / cover no-repeat;
     }
   }
 
   @media screen and (min-width: 1280px) {
     background: url(../images/header/spoon_desktop.png) 0 166px no-repeat,
-      url(../images/header/donuts_desktop.png) right top no-repeat,
-      url(../images/header/background-top_desktop.png) 50% bottom / cover no-repeat,
-      url(../images/about-us/cupcake-box_desktop.png) 10% bottom no-repeat;
+      url(../images/header/donuts_desktop.png) right top / 720px 660px no-repeat,
+      url(../images/about-us/cupcake-box_desktop.png) 5% 95% / 512px 546px no-repeat,
+      url(../images/header/background-top_desktop.png) 50% bottom / cover no-repeat;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: url(../images/header/spoon@2x_desktop.png) 0 166px no-repeat,
-        url(../images/header/donuts@2x_desktop.png) right top / 793px 831px no-repeat,
-        url(../images/about-us/cupcake-box@2x_desktop.png) 71px 548px / 512px 546px no-repeat,
+      background: url(../images/header/spoon@2x_desktop.png) 0 166px / 178.04px 421.14px no-repeat,
+        url(../images/header/donuts@2x_desktop.png) right top / 720px 660px no-repeat,
+        url(../images/about-us/cupcake-box@2x_desktop.png) 71px 95% / 512px 546px no-repeat,
         url(../images/header/background-top@2x_desktop.png) 50% top / cover no-repeat;
     }
   }
