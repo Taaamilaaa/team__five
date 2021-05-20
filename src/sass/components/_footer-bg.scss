@@ -4,7 +4,7 @@
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background: url(../images/footer/flour@2x_mobile.png) right bottom / 88px 65px no-repeat,
-      url(../images/footer/footer-bg@2x_mobile.png) 50% 0 / contain no-repeat;
+      url(../images/footer/footer-bg@2x_mobile.png) 50% 0 / cover no-repeat;
   }
   // @media screen and (min-width: 400px) {
   //   background: url(../images/footer/flour_mobile.png) right bottom no-repeat,
@@ -15,12 +15,12 @@
   //   }
   // }
   @media screen and (min-width: 768px) {
-    background: url(../images/footer/flour_tablet.png) right bottom no-repeat,
-      url(../images/footer/party-confetti_tablet.png) 100% 70% no-repeat,
-      url(../images/footer/bited-donut_tablet.png) 0 55% no-repeat,
+    background: url(../images/footer/flour_tablet.png) right bottom / 152px 144px no-repeat,
+      url(../images/footer/party-confetti_tablet.png) 100% 70% / 191px 345px no-repeat,
+      url(../images/footer/bited-donut_tablet.png) 0 55%/ 196px 200px no-repeat,
       url(../images/footer/footer-bg_tablet.png) 50% 0 / cover no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: url(../images/footer/flour@2x_tablet.png) right bottom / 207px 182px no-repeat,
+      background: url(../images/footer/flour@2x_tablet.png) right bottom / 152px 144px no-repeat,
         url(../images/footer/party-confetti@2x_tablet.png) 100% 70% / 191px 345px no-repeat,
         url(../images/footer/bited-donut@2x_tablet.png) 0 55% / 196px 200px no-repeat,
         url(../images/footer/footer-bg@2x_tablet.png) 50% 0 / cover no-repeat;
