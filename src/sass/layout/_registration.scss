@@ -1,13 +1,13 @@
 // контейнер регистрация
 
 .registration {
-  margin-bottom: 27px;
+  padding-bottom: 27px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 51px;
+    padding-bottom: 51px;
     padding-top: 75px;
   }
   @media screen and (min-width: 1280px) {
-    margin-bottom: 77px;
+    padding-bottom: 77px;
   }
 }
 .regisration__container {
