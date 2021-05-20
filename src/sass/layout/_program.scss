@@ -30,17 +30,18 @@
     line-height: 1.8;
   }
 }
+
 .program__list {
   @media screen and (min-width: 1280px) {
     font-size: 18px;
     line-height: 1.2;
     margin-bottom: 21px;
   }
-  & :nth-last-child(-n + 6) {
+  & .program__item:nth-child(-n + 6) {
     margin-bottom: 10px;
   }
   @media screen and (min-width: 1280px) {
-    & :nth-last-child(-n + 6) {
+    & .program__item:nth-child(-n + 6) {
       margin-bottom: 15px;
     }
   }
@@ -67,7 +68,6 @@
   }
 }
 .program-cards__list {
-  // padding-top: 34px;
   margin-bottom: 30px;
   align-items: center;
   width: 100%;
@@ -79,12 +79,24 @@
     justify-content: flex-start;
   }
 }
-.program-cards__item::before {
+.program__item {
+  display: inline-flex;
+  align-items: center;
+}
+.program__item::before {
+  display: block;
   content: '';
   width: 15px;
   height: 15px;
-  background-image: url(./images/award-solid.svg);
+  margin-right: 5px;
+
+  background-image: url(../images/program/award-solid.svg);
   background-repeat: no-repeat;
+  @media screen and (min-width: 1280px) {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
 }
 
 .program-cards__item {
