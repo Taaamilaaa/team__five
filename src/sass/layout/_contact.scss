@@ -6,15 +6,15 @@
 // end base
 
 .contact {
-  margin-top: 50px;
-  margin-bottom: 47px;
+  padding-top: 50px;
+  padding-bottom: 47px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 50px;
-    margin-top: 17px;
+    padding-bottom: 50px;
+    padding-top: 17px;
   }
   @media screen and (min-width: 1280px) {
-    margin-bottom: 85px;
-    margin-top: 77px;
+    padding-bottom: 85px;
+    padding-top: 77px;
   }
 }
 
@@ -68,6 +68,7 @@
     border-bottom: 1px solid $accent-color;
     width: 100%;
     max-width: 430px;
+    background: transparent;
   }
   input::placeholder {
     color: rgba($color: $accent-color, $alpha: 0.5);
