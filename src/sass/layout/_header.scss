@@ -1,47 +1,56 @@
-
-
-.site-nav{
-    display: none;
-    @media screen and (min-width: 1280px){
-display: flex;
-&__list{
+.site-nav {
+  display: none;
+  @media screen and (min-width: 1280px) {
     display: flex;
-    align-items: center;
+    &__list {
+      display: flex;
+      align-items: center;
     }
-    &__item:not(:last-child){
-        margin-right: 20px;
-}
-&__item{
-    font-size: 18px;
-    line-height: 1.22;
-}
-}
+    &__item:not(:last-child) {
+      margin-right: 20px;
+    }
+    &__item {
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  }
 }
 
-.header__container{
-   text-align: center;
-   @media screen and (min-width: 768px){
-text-align: start;
-   }
-   @media screen and (min-width: 1280px){
-       display: flex;
-   }
+.header__container {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
 }
 .header__logo,
-.header__logo-icon{
-    @media screen and (min-width: 1280px){
-        width: 158px;
-        height: 71px;
-    }  
+.header__logo-icon {
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 71px;
+  }
 }
-.header__logo{
-    margin-right: 38px;
+.header__logo {
+  margin-right: 38px;
+  padding-top: 7px;
+  padding-bottom: 33px;
+  @media screen and (min-width: 768px) {
+    padding-top: 27px;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 31px;
+    padding-bottom: 57px;
+  }
 }
 
 .site-nav__link:hover,
-.site-nav__link:focus{
-   color: $accent-color; 
+.site-nav__link:focus {
+  color: $accent-color;
 }
+
 
 
 
