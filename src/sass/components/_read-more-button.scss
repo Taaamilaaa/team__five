@@ -30,4 +30,7 @@
 .program__button-text {
   transition: all 0.3s;
   transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
