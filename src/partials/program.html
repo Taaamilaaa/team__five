@@ -26,12 +26,18 @@
             </li>
         </ul>
         <div class="program__buttons--disposition">
-            <p class="program__texts"> <span class="is-hidden" id="morea"> <span id="dotsa"></span>Come with your dear people and
-                    friends
+            <p class="program__texts"> 
+                <span class="is-hidden" morea>Come with your dear people and friends
                     and you will spend an unforgettable time and
-                    will become a real professional in donuts cooking!</span></p>
-            <button class="program__button" onclick="Function()" id="myBtna"><span class="program__button-text">Read
-                    more</span></button>
+                    will become a real professional in donuts cooking!
+                </span>
+            </p>
+            <button type="button" class="program__button" button-more>
+                <span class="program__button-text">Read more</span>
+            </button>
+            <button type="button" class="program__button is-hidden" button-less>
+                <span class="program__button-text">Less</span>
+            </button>
         </div>
 </div>
     <ul class="list program-cards__list">
@@ -88,21 +94,6 @@
             </svg>
         </li>
     </ul>
-<script>
-    function Function() {
-        var dots = document.getElementById("dotsa");
-        var moreText = document.getElementById("morea");
-        var btnText = document.getElementById("myBtna");
 
-        if (dots.style.display === "none") {
-            dots.style.display = "inline";
-            btnText.innerHTML = "Read more";
-            moreText.style.display = "none";
-        } else {
-            dots.style.display = "none";
-            btnText.innerHTML = "Less";
-            moreText.style.display = "inline";
-        }
-    }
-</script> 
-
+<script src="../src/js/read-more.js"></script>
+</section>
