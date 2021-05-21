@@ -70,13 +70,13 @@
 .program-cards__list {
   margin-bottom: 30px;
   align-items: center;
-  width: 100%;
+  max-width: 430px;
   height: 100%;
   flex-wrap: wrap;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   @media screen and (max-width: 319.98px) {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 .program-cards__list > .program-cards__item:nth-child(2n) {
